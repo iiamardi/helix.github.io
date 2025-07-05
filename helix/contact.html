@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Farmacia Jonë</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 sticky-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="brand-text">Helix Pharm</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link " href="index.html">Faqja Kryesore</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about.html">Rreth Nesh</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="services.html">Shërbimet</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="products.php">Produktet</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="contact.html">Kontakt</a>
+                    </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="profile.php">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <section class="animated-section">
+            <h1 class="display-4 text-center mb-5">Na Kontaktoni</h1>
+        </section>
+
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <section class="animated-section" style="transition-delay: 0.3s;">
+                    <h2 class="mb-4">Informacionet e Kontaktit</h2>
+                    <p class="lead">
+                        Jemi të gatshëm t'ju përgjigjemi çdo pyetjeje ose shqetësimi që mund të keni.
+                    </p>
+
+                    <div class="mb-4 hover-move">
+                        <h5>Adresa</h5>
+                        <p>Rr Driton Islami<br />Ferizaj, Kosove</p>
+                    </div>
+
+                    <div class="mb-4 hover-move">
+                        <h5>Telefoni</h5>
+                        <p>+383 48 889 066</p>
+                    </div>
+
+                    <div class="hover-move">
+                        <h5>Email</h5>
+                        <p>helixpharm23@outlook.com</p>
+                    </div>
+
+                    <div class="mt-5 p-4 bg-light rounded shadow-sm hover-scale">
+                        <h5>Orari i Punës</h5>
+                        <ul class="list-unstyled">
+                            <li>E Hënë - E Shtune: 8:00 - 22:00</li>
+                            
+                            <li>E Diel: 9:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="animated-section" style="transition-delay: 0.6s;">
+                    <div class="hover-up">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h3 class="card-title text-center mb-4">Dërgoni një Mesazh</h3>
+                                <div id="successAlert" class="alert alert-success mb-4 d-none">
+                                    Faleminderit për mesazhin tuaj! Do t'ju kontaktojmë së shpejti.
+                                </div>
+                               <form method="POST" action="process_contact.php">
+                                    <div class="mb-3">
+                                        <label class="form-label">Emri i Plotë</label>
+                                        <input type="text" name="name" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Telefoni</label>
+                                        <input type="tel" name="phone" class="form-control">
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label">Mesazhi</label>
+                                        <textarea rows="5" name="message" class="form-control" required></textarea>
+                                    </div>
+
+                                    <div class="hover-scale-btn">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                                            Dërgo Mesazhin
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="animated-section" style="transition-delay: 0.9s;">
+            <div class="mt-5">
+                
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1046.2503505724221!2d21.142431158375405!3d42.37793841574659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547f0bf819bba1%3A0x381fb78bfdf67c!2sHelix%20Pharm!5e1!3m2!1sen!2s!4v1751733900549!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+     <footer class="  py-4 mt-4" id="mainFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="footer-heading">Farmacia Jonë</h5>
+                    <p>Shëndeti juaj është prioriteti ynë.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Kontakt</h5>
+                    <p>Rr Driton Islami</p>
+                    <p>Ferizaj, Kosove</p>
+                    <p>Tel: +383 48 889 066</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Orari i Punës</h5>
+                    <p>E Hënë - E Shtune: 8:00 - 22:00</p>
+                    <p>E Diel: 9:00 - 18:00</p>
+                     
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>&copy; <span id="currentYear"></span> Farmacia Jonë. Të gjitha të drejtat e rezervuara.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

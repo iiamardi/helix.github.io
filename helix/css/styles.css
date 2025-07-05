@@ -1,0 +1,126 @@
+/* Navbar background */
+#mainNavbar {
+    background-color: #004080; /* a nice deep blue */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Brand text */
+#mainNavbar .brand-text {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    color: #e0f0ff;
+    text-transform: uppercase;
+}
+
+/* Nav links */
+#mainNavbar .nav-link {
+    color: #cce6ff;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 0.5rem 1rem;
+}
+
+/* Hover effect on links */
+#mainNavbar .nav-link:hover,
+#mainNavbar .nav-link:focus {
+    color: #ffffff;
+    transform: scale(1.1);
+    text-shadow: 0 0 6px #99ccff;
+}
+
+/* Active link style */
+#mainNavbar .nav-link.active {
+    color: 	#b2d8b2;
+    font-weight: 700;
+    text-shadow: 0 0 8px 	#32cd32;
+}
+
+/* Spacing for navbar items */
+#mainNavbar .nav-item.mx-2 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+/* Navbar toggler (hamburger) */
+#mainNavbar .navbar-toggler {
+    border: none;
+}
+
+#mainNavbar .navbar-toggler-icon {
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(120%) contrast(120%);
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+    #mainNavbar .nav-link {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+}
+#mainFooter {
+    background-color: #2d6a4f; /* e gjelber e thelle dhe e qete */
+    color: #d8f3dc; /* e lehte, ngjyra e bardhe e zbutur me gjelber */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mainFooter h5 {
+    color: #95d5b2; /* nje nuancë me e lehte e gjelber */
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#mainFooter p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d8f3dc;
+}
+
+#mainFooter a {
+    color: #95d5b2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#mainFooter a:hover {
+    color: #74c69d;
+}
+
+#mainFooter .footer-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#mainFooter .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#mainFooter .row.mt-3 p {
+    font-size: 13px;
+    color: #b7e4c7;
+}
+
+/* Shtim hije e lehte */
+#mainFooter {
+    box-shadow: inset 0 0 10px #1b4332;
+}
+
+/* Për button ose elemente të tjera në footer, nëse do t'i shtoni */
+#mainFooter button,
+#mainFooter input[type="submit"] {
+    background-color: #95d5b2;
+    border: none;
+    color: #1b4332;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#mainFooter button:hover,
+#mainFooter input[type="submit"]:hover {
+    background-color: #74c69d;
+    color: #fff;
+}

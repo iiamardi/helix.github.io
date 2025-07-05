@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 sticky-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="brand-text">Farmacia Jonë</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Faqja Kryesore</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about.html">Rreth Nesh</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="services.html">Shërbimet</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="products.html">Produktet</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <div class="admin-dashboard container mt-5">
+        <h2>Admin Dashboard</h2>
+        <button id="logoutBtn" class="btn btn-danger mb-4">Logout</button>
+        
+        <div class="products-list">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Products</h3>
+                <a href="/admin/add-product" class="btn btn-primary">Add New Product</a>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsTableBody">
+                        <!-- Products will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+      <footer class="  py-4 mt-4" id="mainFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="footer-heading">Farmacia Jonë</h5>
+                    <p>Shëndeti juaj është prioriteti ynë.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Kontakt</h5>
+                    <p>Rr Driton Islami</p>
+                    <p>Ferizaj, Kosove</p>
+                    <p>Tel: +383 48 889 066</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Orari i Punës</h5>
+                    <p>E Hënë - E Shtune: 8:00 - 22:00</p>
+                    <p>E Diel: 9:00 - 18:00</p>
+                     
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>&copy; <span id="currentYear"></span> Farmacia Jonë. Të gjitha të drejtat e rezervuara.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>
